@@ -1,0 +1,12 @@
+.nav {
+  margin-left: 390px;
+  &__list {
+    @include flex;
+    gap: 55px;
+  }
+  &__link {
+    font-size: 13px;
+    line-height: 231%;
+    color: $whiteColor;
+  }
+}

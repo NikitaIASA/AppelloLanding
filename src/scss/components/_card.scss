@@ -1,0 +1,26 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+  &__item {
+    flex: 0 1 48%;
+    padding: 40px 60px 40px 40px;
+    border: 1px solid #E8E8E8;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 147%;
+    color: $blackColor;
+    margin-bottom: 23px;
+  }
+  &__desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188%;
+    color: $greyColor;
+    max-width: 460px;
+  }
+}

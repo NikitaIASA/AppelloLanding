@@ -1,0 +1,33 @@
+.ourWork {
+  background-color: $secondaryBlue;
+  color: $whiteColor;
+  min-height: 880px;
+  margin-top: 150px;
+  &__title {
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 122%;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 80px;
+  }
+  &__row {
+    padding-left: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 140px;
+    padding-bottom: 100px;
+    .work-item {
+      &__title {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 119%;
+        margin-bottom: 15px;
+      }
+      &__desc {
+        font-size: 11px;
+        line-height: 273%;
+      }
+    }
+  }
+}
