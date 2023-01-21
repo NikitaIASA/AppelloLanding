@@ -1,0 +1,29 @@
+.partnerships {
+  padding-bottom: 86px;
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 22px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 24px 34px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  &__developmentArea {
+    font-size: 15px;
+    line-height: 200%;
+    color: $greyColor;
+  }
+  &__city {
+    font-size: 20px;
+    line-height: 140%;
+    color: $blackColor;
+  }
+  &__img {
+    object-fit: none;
+    align-self: end;
+  }
+}
