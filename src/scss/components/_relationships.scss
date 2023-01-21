@@ -1,0 +1,14 @@
+.relationships {
+  padding: 75px 0;
+  &__companies  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    padding: 50px 0px;
+    margin-top: 50px;
+  }
+
+}
