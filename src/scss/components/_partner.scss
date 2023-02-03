@@ -1,0 +1,55 @@
+$partner-gap: 70px;
+
+.partner {
+  margin-top: -70px;
+  &__inner {
+    display: flex;
+    padding: 50px 25px;
+    background-color: $whiteColor;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    gap: calc(($partner-gap) * 2)
+  }
+  &__text {
+    width: 100%;
+    max-width: 333px;
+    position: relative;
+    padding: 30px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      right: calc(-1 * $partner-gap);
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-image: url("../img/divider.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 146%;
+    color: $blackColor;
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 188%;
+    color: $greyColor;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 51px;
+    padding: 30px 0;
+  }
+  &__item {
+    width: 100%;
+    max-width: 136px;
+    font-size: 11px;
+    line-height: 273%;
+    color: $greyColor;
+  }
+}
