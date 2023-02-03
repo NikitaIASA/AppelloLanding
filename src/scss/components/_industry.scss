@@ -1,0 +1,26 @@
+.industry {
+  padding: 140px 0;
+  background-color: #FAFAFA;
+  &__inner {
+    margin: 0 auto;
+    @include flex-column-center;
+    max-width: 450px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 122%;
+    color: $blackColor;
+    margin-bottom: 35px;
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 188%;
+    color: $greyColor;
+    margin-bottom: 35px;
+  }
+  &__images {
+    display: flex;
+    gap: 20px;
+  }
+}
