@@ -1,0 +1,37 @@
+.faq {
+  background-color: $greyBG;
+  padding: 150px 0;
+  &__email {
+    color: $primaryBlue;
+  }
+}
+
+.accordion {
+  &__item {
+    cursor: pointer;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+  }
+  &__title {
+    padding: 25px 0;
+    &::before {
+      content: "+";
+      color: black;
+      position: absolute;
+      top: 30px;
+      right: -5px;
+      font-size: 30px;
+      transform: translateY(-50%);
+    }
+    &.active::before{
+      content: "-";
+      transition: 1s ease-in-out;
+    }
+  }
+  &__content {
+    transition: 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+}

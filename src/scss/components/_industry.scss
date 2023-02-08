@@ -1,6 +1,6 @@
 .industry {
   padding: 140px 0;
-  background-color: #FAFAFA;
+  background-color: $greyBG;
   &__inner {
     margin: 0 auto;
     @include flex-column-center;
