@@ -12,21 +12,27 @@
     border-bottom: 1px solid #e8e8e8;
     position: relative;
   }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__more {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 6px;
+    background-image: url('../../img/svg/plus.svg');
+    background-repeat: no-repeat;
+    transform: rotateZ(0);
+    transition: .3s linear;
+    &.active {
+      transition: .3s linear;
+      transform: rotateZ(45deg);
+    }
+  }
   &__title {
     padding: 25px 0;
-    &::before {
-      content: "+";
-      color: black;
-      position: absolute;
-      top: 30px;
-      right: -5px;
-      font-size: 30px;
-      transform: translateY(-50%);
-    }
-    &.active::before{
-      content: "-";
-      transition: 1s ease-in-out;
-    }
   }
   &__content {
     transition: 0.3s ease-in-out;

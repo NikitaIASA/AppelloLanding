@@ -1,15 +1,16 @@
 // accordion
 
-document.querySelectorAll('.accordion__title').forEach((el) => {
+document.querySelectorAll('.accordion__header').forEach((el) => {
   el.addEventListener('click', () => {
     let content = el.nextElementSibling;
+    let more = el.querySelector('.accordion__more');
 
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
-      el.classList.remove("active");
+      more.classList.remove("active");
     } else {
       content.style.maxHeight = content.scrollHeight + 'px';
-      el.classList.add("active");
+      more.classList.add("active");
     }
   })
 })
