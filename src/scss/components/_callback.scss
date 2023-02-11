@@ -1,0 +1,43 @@
+.callback {
+  position: relative;
+  background-image: url("../../img/callback-bg.jpg");
+  background-size: cover;
+  min-height: 880px;
+  &__inner {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px 50px;
+    background-color: $whiteColor;
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 152%;
+    color: $blackColor;
+    margin-bottom: 125px;
+    max-width: 320px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    cursor: pointer;
+    border: none;
+    padding: 18px 47px;
+  }
+}
+
+.form {
+  &__title {
+    width: 500px;
+    padding: 18px 0 18px 17px;
+    margin-bottom: 30px;
+  }
+  &__details {
+    width: 500px;
+    padding: 10px 0 86px 17px;
+    margin-bottom: 40px;
+  }
+}
