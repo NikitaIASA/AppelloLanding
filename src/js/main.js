@@ -20,6 +20,9 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   centeredSlides: true,
   loop: true,
+  autoplay: {
+    delay: 1000,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
