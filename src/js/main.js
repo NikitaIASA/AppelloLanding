@@ -14,3 +14,14 @@ document.querySelectorAll('.accordion__header').forEach((el) => {
     }
   })
 })
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 7,
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
