@@ -1,8 +1,11 @@
 .cards {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 50px;
+  &--active {
+    display: flex;
+  }
   &__item {
     flex: 0 1 48%;
     padding: 40px 60px 40px 40px;
