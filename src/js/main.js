@@ -16,9 +16,6 @@ document.querySelectorAll('.accordion__header').forEach((el) => {
 })
 
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 7,
-  spaceBetween: 10,
-  centeredSlides: true,
   loop: true,
   autoplay: {
     delay: 1000,
@@ -27,7 +24,19 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 7,
+      spaceBetween: 10
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    }
+  }
 });
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelector('.tabs');

@@ -11,6 +11,9 @@
   &__content {
     max-width: 430px;
     margin-top: 160px;
+    @include onMobile {
+      text-align: center;
+     }
   }
   &__title {
     font-size: 42px;
@@ -24,9 +27,15 @@
     line-height: 273%;
     color: $whiteColor;
     margin-bottom: 46px;
+    @include onMobile {
+      font-size: 14px;
+     }
   }
   &__btn {
     margin: 0 !important;
+    @include onMobile {
+      display: inline-block !important;
+     }
   }
 }
 

@@ -12,15 +12,24 @@
     line-height: 122%;
     color: $blackColor;
     margin-bottom: 35px;
+    @include onMobile {
+      text-align: center;
+    }
   }
   &__desc {
     font-size: 16px;
     line-height: 188%;
     color: $greyColor;
     margin-bottom: 35px;
+    @include onMobile {
+      text-align: center;
+    }
   }
   &__images {
     display: flex;
     gap: 20px;
+    @include onMobile {
+      flex-direction: column;
+    }
   }
 }

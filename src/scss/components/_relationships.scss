@@ -9,6 +9,10 @@
     background-color: $greyBG;
     padding: 50px 0px;
     margin-top: 50px;
+    @include onMobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
 }

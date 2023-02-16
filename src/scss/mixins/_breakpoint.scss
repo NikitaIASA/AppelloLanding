@@ -1,30 +1,30 @@
 /* stylelint-disable */
 
-@mixin for-desktop {
+@mixin onDesktop {
   @media (min-width: (1025px)) {
     @content;
   }
 }
 
-@mixin big-desktop {
+@mixin onBig-desktop {
   @media (max-width: (1440px)) {
     @content;
   }
 }
 
-@mixin tablet {
+@mixin onTablet {
   @media (max-width: (1024px)) {
     @content;
   }
 }
 
-@mixin small-tablet {
+@mixin onSmall-tablet {
   @media (max-width: (768px)) {
     @content;
   }
 }
 
-@mixin mobile {
+@mixin onMobile {
   @media (max-width: (576px)) {
     @content;
   }

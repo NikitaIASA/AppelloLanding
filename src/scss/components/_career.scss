@@ -1,5 +1,8 @@
 .career {
   padding: 150px 0;
+  @include onMobile {
+    padding: 75px 0;
+  }
 }
 
 .swiper {
@@ -11,6 +14,9 @@
     align-items: center;
     text-align: center;
     background: $whiteColor;
+    @include onMobile {
+      justify-content: center;
+    }
   }
   &-pagination {
     margin-top: 100px;
@@ -49,12 +55,18 @@
   top: 25px;
   left: 130px;
   background-image: url("../../img/back.svg");
+  @include onMobile {
+    left: 20px;
+  }
 }
 
 .swiper-button-next {
   top: 25px;
   right: 200px;
   background-image: url("../../img/right.svg");
+  @include onMobile {
+    right: 20px;
+  }
 }
 
 

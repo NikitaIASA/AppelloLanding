@@ -5,6 +5,10 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     column-gap: 22px;
+    @include onMobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__item {
     display: flex;

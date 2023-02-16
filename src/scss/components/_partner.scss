@@ -7,7 +7,11 @@ $partner-gap: 70px;
     padding: 50px 25px;
     background-color: $whiteColor;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-    gap: calc(($partner-gap) * 2)
+    gap: calc(($partner-gap) * 2);
+    @include onMobile {
+      flex-direction: column;
+      gap: 0;
+    }
   }
   &__text {
     width: 100%;
@@ -44,6 +48,9 @@ $partner-gap: 70px;
     column-gap: 100px;
     row-gap: 51px;
     padding: 30px 0;
+    @include onMobile {
+      @include flex-column-center;
+    }
   }
   &__item {
     width: 100%;
@@ -51,5 +58,9 @@ $partner-gap: 70px;
     font-size: 11px;
     line-height: 273%;
     color: $greyColor;
+    @include onMobile {
+      font-size: 14px;
+      text-align: center;
+    }
   }
 }
