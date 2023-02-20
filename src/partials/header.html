@@ -4,16 +4,22 @@
       <a href="#" class="header__logo">
         <img class="logo__img" src="../img/Appello-logo.svg" alt="Appello logo"/>
       </a>
-      <nav class="nav header__nav">
+      <nav class="nav header__nav" data-menu>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Process</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Resources</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-menu-item data-scroll>Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-menu-item data-scroll>Portfolio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-menu-item data-scroll>Process</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-menu-item data-scroll>Team</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-menu-item data-scroll>Resources</a></li>
+          <li class="nav__item"><a href="#" class="nav__link btn-quote " data-menu-item data-scroll>Get project quote</a></li>
         </ul>
+        <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
       </nav>
-      <a class="btn-quote" href="#">Get project quote</a>
+      <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
     </div>
     <div class="header__content">
       <h1 class="header__title">Leaders in Software Design & Development</h1>

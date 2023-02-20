@@ -7,14 +7,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    @include onMobile {
-      display: flex;
-      flex-direction: column;
+    @include onTablet {
+      @include flex-column-center;
     }
   }
   &__item {
     padding: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    @include onTablet {
+      @include flex-column-center;
+      text-align: center;
+    }
   }
   &__img {
     margin-bottom: 50px;

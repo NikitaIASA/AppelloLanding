@@ -17,23 +17,24 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 140px;
     padding-bottom: 100px;
-    @include onMobile {
-      @include flex-column-center;
-      text-align: center;
-      padding-left: 0;
-      gap: 70px;
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
     }
-    .work-item {
-      &__title {
-        font-weight: 400;
-        font-size: 42px;
-        line-height: 119%;
-        margin-bottom: 15px;
-      }
-      &__desc {
-        font-size: 11px;
-        line-height: 273%;
-      }
-    }
+  }
+}
+
+.work-item {
+  &__title {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 119%;
+    margin-bottom: 15px;
+  }
+  &__desc {
+    font-size: 11px;
+    line-height: 273%;
+  }
+  @include onTablet {
+    text-align: center;
   }
 }

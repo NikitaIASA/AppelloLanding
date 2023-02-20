@@ -1,8 +1,8 @@
 .portfolio {
   padding-bottom: 75px;
   margin-top: -370px;
-  @include onMobile {
-    margin-top: -300px;
+  @include onTablet {
+    margin-top: 0;
   }
   &__row {
     display: grid;
@@ -10,16 +10,18 @@
     grid-column-gap: 30px;
     grid-row-gap: 70px;
     margin-bottom: 41px;
-    @include onMobile {
+    @include onTablet {
       display: flex;
       flex-direction: column;
-      margin-top: -300px;
     }
   }
   &__item {
     padding: 10px;
     background-color: $whiteColor;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    @include onTablet {
+      text-align: center;
+    }
   }
 
   &__title {

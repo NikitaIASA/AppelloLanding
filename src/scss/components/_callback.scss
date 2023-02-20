@@ -27,8 +27,7 @@
     }
   }
   &__form {
-    display: flex;
-    flex-direction: column;
+    @include flex-column-center;
   }
   &__btn {
     cursor: pointer;

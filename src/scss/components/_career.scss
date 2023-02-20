@@ -14,7 +14,7 @@
     align-items: center;
     text-align: center;
     background: $whiteColor;
-    @include onMobile {
+    @include onTablet {
       justify-content: center;
     }
   }
@@ -33,6 +33,13 @@
   text-align: center;
   border: 1px solid #e8e8e8;
   border-radius: 25px;
+  @include onBig-tablet {
+    font-size: 12px;
+    padding: 16px 30px;
+  }
+  @include onTablet {
+    padding: 16px 20px;
+  }
 }
 
 .swiper-button-prev,
@@ -55,7 +62,7 @@
   top: 25px;
   left: 130px;
   background-image: url("../../img/back.svg");
-  @include onMobile {
+  @include onTablet {
     left: 20px;
   }
 }
@@ -64,7 +71,7 @@
   top: 25px;
   right: 200px;
   background-image: url("../../img/right.svg");
-  @include onMobile {
+  @include onTablet {
     right: 20px;
   }
 }
