@@ -23,7 +23,7 @@
     margin-bottom: 50px;
   }
   &__desc {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 273%;
     color: $whiteColor;
     margin-bottom: 46px;
@@ -40,16 +40,7 @@
 }
 
 
-.btn-quote {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 123%;
-  text-align: center;
-  color: $whiteColor;
-  padding: 12px 15px;
-  border: 1px solid $whiteColor;
-  border-radius: 5px;
-}
+
 
 .menu--active {
   opacity: 1;

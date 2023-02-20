@@ -1,6 +1,6 @@
 .nav {
   &__list {
-    @include flex;
+    @include flex-h-center;
     flex-wrap: wrap;
     gap: 55px;
     @include onBig-tablet {
@@ -17,6 +17,10 @@
     font-size: 13px;
     line-height: 231%;
     color: $whiteColor;
+    &:hover {
+      color: $primaryBlue;
+      transition: .3s linear;
+    }
   }
 
   @include onTablet {
@@ -40,3 +44,17 @@
   visibility: visible;
 }
 
+.btn-quote {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  text-align: center;
+  color: $whiteColor;
+  padding: 12px 15px;
+  border: 1px solid $whiteColor;
+  border-radius: 5px;
+  &:hover {
+    border-color: $primaryBlue;
+    transition: .3s linear;
+  }
+}
