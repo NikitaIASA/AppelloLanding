@@ -7,3 +7,7 @@ Appello training landing.
  - SCSS
  - Javascript
  - Gulp task runner
+
+
+# To run: 
+npm install, gulp
